@@ -24,6 +24,5 @@ describe('(Component) ComponentA', () => {
 
 	it('should see ComponentB', () => {
 		expect(container.find('ComponentB').length).toEqual(1)
-		// expect(container.prop('foo')).toEqual(initialState.foo)
 	})
 })
