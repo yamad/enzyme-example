@@ -4,6 +4,7 @@ import sinon from 'sinon'
 import { shallow } from 'enzyme'
 
 import ComponentA from './ComponentA'
+import ComponentB from './ComponentB'
 
 
 import configureStore from 'redux-mock-store'
@@ -23,6 +24,6 @@ describe('(Component) ComponentA', () => {
 	})
 
 	it('should see ComponentB', () => {
-		expect(container.find('ComponentB').length).toEqual(1)
+		expect(container.find(ComponentB).length).toEqual(1)
 	})
 })
